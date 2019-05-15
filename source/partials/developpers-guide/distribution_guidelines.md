@@ -1,4 +1,4 @@
-<div style="text-align: right;">国土交通省　平成31年3月27日版</div>
+<div class="only-print" style="text-align: right;">国土交通省　平成31年3月27日版</div>
 
 # バス情報配信方法ガイドライン
 
@@ -25,12 +25,12 @@
 
 以下に実施例を示します。
 
-| 設置者                         | 実施例                                                       |
-| ------------------------------ | ------------------------------------------------------------ |
-| バス事業者                     | [永井運輸](http://www.nagai-unyu.net/rosen/GTFS/index.html)  |
-| 自治体                         | [富山市（オープンデータカタログサイト）](http://opdt.city.toyama.lg.jp/dataset/toyamacity-bus-gtfs-jp)<br />[佐賀県（バスデータ専用サイト）](http://opendata.sagabus.info/) |
+| 設置者    | 実施例     |
+| ----------------- | -------------- |
+| バス事業者  | [永井運輸](http://www.nagai-unyu.net/rosen/GTFS/index.html)  |
+| 自治体   | [富山市（オープンデータカタログサイト）](http://opdt.city.toyama.lg.jp/dataset/toyamacity-bus-gtfs-jp)<br />[佐賀県（バスデータ専用サイト）](http://opendata.sagabus.info/) |
 | バスロケーションシステム事業者 | [リオス Bus-Vision（両備バス・岡電バス）](https://loc.bus-vision.jp/ryobi/view/opendata.html) |
-| 経路検索事業者                 | [ジョルダン 公共交通データHUBシステム（群馬県内各社）](https://gma.jcld.jp/GMA_OPENDATA/) |
+| 経路検索事業者   | [ジョルダン 公共交通データHUBシステム（群馬県内各社）](https://gma.jcld.jp/GMA_OPENDATA/) |
 
 ## ファイル構成・URL
 
@@ -57,14 +57,12 @@
 
 配信サイトには、下記等の内容を記載します。
 
-| 対象       | 項目          | 記載例                                                       |
-| ---------- | ------------- | ------------------------------------------------------------ |
-| 全般       | ライセンス    | CC0 1.0                                                      |
-| 静的データ | 更新日        | 2019-03-10                                                   |
-|            | 改正日        | 2019-04-01                                                   |
-|            | 更新内容      | ダイヤ改正（公園線開業、時刻修正）                           |
-|            | 静的データURL | https://www.dummy_agency.co.jp/gtfs/gtfs.zip                 |
-| 動的データ | 更新間隔      | 15秒間隔                                                     |
-|            | 動的データURL | https://www.dummy_agency.co.jp/gtfs-rt/trip_update.pb<br />https://www.dummy_agency.co.jp/gtfs-rt/vehicle_position.pb |
-
-
+| 対象       | 項目          | 記載例      |
+| ---------- | ------------- | -------------------------- |
+| 全般       | ライセンス    | CC0 1.0    |
+| 静的データ | 更新日| 2019-03-10 |
+|    | 改正日| 2019-04-01 |
+|    | 更新内容      | ダイヤ改正（公園線開業、時刻修正）     |
+|    | 静的データURL | https://www.dummy_agency.co.jp/gtfs/gtfs.zip   |
+| 動的データ | 更新間隔      | 15秒間隔   |
+|    | 動的データURL | https://www.dummy_agency.co.jp/gtfs-rt/trip_update.pb<br />https://www.dummy_agency.co.jp/gtfs-rt/vehicle_position.pb |

@@ -1,0 +1,81 @@
+- title: 初めての方へ
+  content: get-started
+  path: /get-started.html
+  nest_depth: 1
+  contents:
+    - title: はじめよう！「標準的なバス情報フォーマット」
+      content: introduction
+    - title: データ整備・活用事例
+      content: examples
+- title: データの整備
+  content: making-data
+  path: /making-data.html
+  nest_depth: 1
+  contents:
+    - title: データ整備の手引き
+      content: how_to_start
+    - title: 経路検索事業者へのデータ提供
+      content: service_providers
+- title: 技術情報
+  content: developpers-guide
+  path: /developpers-guide.html
+  nest_depth: 2
+  contents:
+    - title: 配信方法ガイドライン
+      content: distribution_guidelines
+      path: /developpers-guide/distribution_guidelines.html
+      contents:
+        - title: 配信方法ガイドライン
+          content: distribution_guidelines
+    - title: 動的データガイドライン
+      content: gtfs-realtime_guidelines
+      path: /developpers-guide/gtfs-realtime_guidelines.html
+      contents:
+        - title: 動的データガイドライン
+          content: gtfs-realtime_guidelines
+    - title: 静的データ仕様書
+      content: format-reference
+      path: /developpers-guide/format-reference.html
+      contents:
+        - title: 静的バス情報フォーマット（GTFS-JP）の概要
+          content: overview
+        - title: 事業者情報<br>事業者追加情報<br>agency.txt<br>agency_jp.txt
+          content: agency
+        - title: 停留所・標柱情報<br>stops.txt
+          content: stops
+        - title: 経路情報<br>routes.txt<br>経路追加情報<br>routes_jp.txt
+          content: routes
+        - title: 便情報<br>trips.txt
+          content: trips
+        - title: 営業所情報<br>office_jp.txt
+          content: office_jp
+        - title: 通過時刻情報<br>stop_times.txt
+          content: stop_times
+        - title: 運行区分情報<br>calendar.txt<br>運行日情報<br>calendar_dates.txt
+          content: calendar
+        - title: 運賃属性情報<br>fare_attributes.txt<br>運賃定義情報<br>fare_rules.txt
+          content: fare
+        - title: 描画情報<br>shapes.txt
+          content: shapes
+        - title: 運行間隔情報<br>frequencies.txt
+          content: frequencies
+        - title: 乗換情報<br>transfers.txt
+          content: transfers
+        - title: 提供情報<br>feed_info.txt
+          content: feed_info
+        - title: 翻訳情報<br>translations.txt
+          content: translations
+        - title: 更新履歴
+          content: change_log
+- title: コミュニティ
+  content: community
+  path: /community.html
+  nest_depth: 0
+- title: 公開データ一覧
+  content: gtfs-list
+  path: http://tshimada291.sakura.ne.jp/transport/gtfs-list.html
+  nest_depth: 0
+- title: ブログ
+  content: blog
+  path: https://gtfs.jp/blog/
+  nest_depth: 0

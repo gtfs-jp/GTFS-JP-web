@@ -1,0 +1,18 @@
+- group_name: 標準的なバス情報フォーマット広め隊
+  description: 広める人たち
+  members:
+    - name: Under construction
+      facebook: hoge
+      twitter: hoge
+      location: hoge
+    - name: Under construction
+      facebook: hoge
+- group_name: GTFS-JP-Web
+  description: このページを作っている人たち
+  members:
+    - name: Under construction
+      facebook: hoge
+      twitter: hoge
+      location: hoge
+    - name: Under construction
+      facebook: hoge

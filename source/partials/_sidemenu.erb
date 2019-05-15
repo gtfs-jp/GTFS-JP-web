@@ -1,0 +1,58 @@
+<% data.links.each do |item| %>
+  <% if item.nest_depth == 0 %>
+    <% if current_path.include?(item.content)%>
+      <a href="<%= item.path %>"><p class="grey-text text-darken-4 selected-chapter"><%= item.title %></p></a>
+    <% else %>
+      <a href="<%= item.path %>"><p class="grey-text text-darken-1"><%= item.title %></p></a>
+    <% end %>
+  <% end %>
+
+  <% if item.nest_depth == 1 %>
+    <% if current_path.include?(item.content)%>
+      <a href="<%= item.path %>"><p class="grey-text text-darken-4 selected-chapter"><%= item.title %></p></a>
+    <% else %>
+      <a href="<%= item.path %>"><p class="grey-text text-darken-1"><%= item.title %></p></a>
+    <% end %>
+    <ul class=" table-of-contents">
+      <% item.contents.each do |child_item| %>
+        <li>
+          <% if current_path.include?(item.content)%>
+            <% link_to "##{child_item.content}" do %>
+              <p><%= child_item.title %></p>
+            <% end %>
+          <% else %>
+            <% link_to "#{item.path}##{child_item.content}" do %>
+              <p><%= child_item.title %></p>
+            <% end %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <% if item.nest_depth == 2 %>
+    <% if current_path.include?(item.content)%>
+      <a href="<%= item.path %>"><p class="grey-text text-darken-4 selected-chapter"><%= item.title %></p></a>
+    <% else %>
+      <a href="<%= item.path %>"><p class="grey-text"><%= item.title %></p></a>
+    <% end %>
+    <ul class=" table-of-contents">
+      <% item.contents.each do |child_item| %>
+        <% if current_path.include?(child_item.content)%>
+          <a href="<%= child_item.path %>"><p class="grey-text text-darken-4 selected-chapter"><%= child_item.title %></p></a>
+        <% else %>
+          <a href="<%= child_item.path %>"><p class="grey-text"><%= child_item.title %></p></a>
+        <% end %>
+          <% child_item.contents.each do |grandchild_item| %>
+            <li>
+              <% if current_path.include?(child_item.content)%>
+                <% link_to "##{grandchild_item.content}" do %>
+                  <p><%= grandchild_item.title %></p>
+                <% end %>
+              <% end %>
+            </li>
+          <% end %>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>

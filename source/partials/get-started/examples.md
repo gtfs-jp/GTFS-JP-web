@@ -1,4 +1,4 @@
-<div style="text-align: right;">国土交通省　平成31年3月27日版</div>
+<div class="only-print" style="text-align: right;">国土交通省　平成31年3月27日版</div>
 
 # データ整備・活用事例
 
@@ -23,13 +23,13 @@
 
 ### 動的データ（GTFSリアルタイム）整備事例
 
-| バス事業者                        | 静的データ出力システム         | 動的データ出力システム           | オープン化                                                   | 取組紹介                                                     |
-| --------------------------------- | ------------------------------ | -------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 宇野自動車                        | その筋屋<br />(Sujiya Systems) | バスまだ？<br />(Sujiya Systems) | [配信サイト](http://www3.unobus.co.jp/opendata/)             | [講演動画](https://youtu.be/_VLrCmW05ck)                     |
-| 両備バス・岡電バス                | Bus-Vision<br />(リオス)       | Bus-Vision(リオス)               | [配信サイト](https://loc.bus-vision.jp/ryobi/view/opendata.html) | [おしらせ](https://ryobi.gr.jp/news/4946/)                   |
-| 中津川市                          | その筋屋<br />(Sujiya Systems) | Sky Brain<br />(ヴァル研究所)    | [配信サイト](http://www.city.nakatsugawa.gifu.jp/page/083409.html) | [取組紹介](http://www.city.nakatsugawa.gifu.jp/page/083350.html) |
-| 佐賀市交通局<br />（佐賀県 事業） | その筋屋<br />(Sujiya Systems) | ユニトランド 製                  | [配信サイト](http://opendata.sagabus.info/)                  | [講演資料](http://wwwtb.mlit.go.jp/kyushu/content/000090553.pdf) |
-| みちのりホールディングス各社      | PTD-HS<br />(ジョルダン)       | PTD-HS<br />(ジョルダン)         |                                                              | [おしらせ](http://www.michinori.co.jp/pdf/20190201_PR_kanto.pdf) |
+| バス事業者 | 静的データ出力システム | 動的データ出力システム | オープン化 | 取組紹介 |
+| ------------ | --------- | ----------- | ------------------ | ------------------ |
+| 宇野自動車  | その筋屋<br />(Sujiya Systems) | バスまだ？<br />(Sujiya Systems) | [配信サイト](http://www3.unobus.co.jp/opendata/) | [講演動画](https://youtu.be/_VLrCmW05ck)     |
+| 両備バス・岡電バス| Bus-Vision<br />(リオス) | Bus-Vision(リオス)   | [配信サイト](https://loc.bus-vision.jp/ryobi/view/opendata.html) | [おしらせ](https://ryobi.gr.jp/news/4946/)   |
+| 中津川市    | その筋屋<br />(Sujiya Systems) | Sky Brain<br />(ヴァル研究所)    | [配信サイト](http://www.city.nakatsugawa.gifu.jp/page/083409.html) | [取組紹介](http://www.city.nakatsugawa.gifu.jp/page/083350.html) |
+| 佐賀市交通局<br />（佐賀県 事業） | その筋屋<br />(Sujiya Systems) | ユニトランド 製  | [配信サイト](http://opendata.sagabus.info/)  | [講演資料](http://wwwtb.mlit.go.jp/kyushu/content/000090553.pdf) |
+| みちのりホールディングス各社| PTD-HS<br />(ジョルダン) | PTD-HS<br />(ジョルダン)   |  | [おしらせ](http://www.michinori.co.jp/pdf/20190201_PR_kanto.pdf) |
 
 ![宇野自動車・両備グループ](images/uno_ryobi.png)
 
@@ -41,13 +41,13 @@
 
 整備主体等の特徴別の事例を下記に示します。
 
-| バス事業者   | 静的データ出力システム | オープン化                                                   | 整備主体等の特徴                                           | 取組紹介                                                     |
-| ------------ | ---------------------- | ------------------------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------ |
-| 永井運輸     | その筋屋               | [配信サイト](http://www.nagai-unyu.net/rosen/GTFS/index.html) | 中小事業者による自社整備                                   | [講演資料](https://www.slideshare.net/YoheiMizuno1/gtfs-121044697) |
-| 青森市交通部 | その筋屋               | [配信サイト](https://www.city.aomori.aomori.jp/kotsu-kanri/koutsu/oshirase/20180401gtfso-punnde-ta.html) | 公営バスによる自社整備                                     | [講演資料](https://www.slideshare.net/kouki99/ss-89844671)   |
-| 富山県内各社 | その筋屋, 西沢ツール   | [配信サイト](http://opendata.pref.toyama.jp/pages/gtfs_jp.htm) | 県事業、市町による整備<br />地域IT団体(Code for)による支援 | [講演資料](https://www.slideshare.net/niyalist/ss-135590317) |
-| 群馬県内各社 | PTD-HS(ジョルダン)     | [配信サイト](https://gma.jcld.jp/GMA_OPENDATA/)              | 県事業、経路検索CPによる整備                               | [講演資料](https://www.slideshare.net/niyalist/ss-135590965) |
-| 山梨県内各社 | 山梨大学, YSK e-com 製 | [配信サイト](http://opendata.busmaps.jp/)                    | 県バス協会、地元IT企業、大学による協働                     | [講演資料](https://www.slideshare.net/KenjiMorohoshi/gtfpbms20171209-84520742) |
+| バス事業者 | 静的データ出力システム | オープン化 | 整備主体等の特徴 | 取組紹介 |
+| ------------ | --------- | -------- | ------ | -------- |
+| 永井運輸  | その筋屋 | [配信サイト](http://www.nagai-unyu.net/rosen/GTFS/index.html) | 中小事業者による自社整備  | [講演資料](https://www.slideshare.net/YoheiMizuno1/gtfs-121044697) |
+| 青森市交通部 | その筋屋 | [配信サイト](https://www.city.aomori.aomori.jp/kotsu-kanri/koutsu/oshirase/20180401gtfso-punnde-ta.html) | 公営バスによる自社整備 | [講演資料](https://www.slideshare.net/kouki99/ss-89844671)|
+| 富山県内各社 | その筋屋, 西沢ツール| [配信サイト](http://opendata.pref.toyama.jp/pages/gtfs_jp.htm) | 県事業、市町による整備<br />地域IT団体(Code for)による支援 | [講演資料](https://www.slideshare.net/niyalist/ss-135590317) |
+| 群馬県内各社 | PTD-HS(ジョルダン)  | [配信サイト](https://gma.jcld.jp/GMA_OPENDATA/)| 県事業、経路検索CPによる整備 | [講演資料](https://www.slideshare.net/niyalist/ss-135590965) |
+| 山梨県内各社 | 山梨大学, YSK e-com 製 | [配信サイト](http://opendata.busmaps.jp/)| 県バス協会、地元IT企業、大学による協働 | [講演資料](https://www.slideshare.net/KenjiMorohoshi/gtfpbms20171209-84520742) |
 
 ![群馬県](images/gunma.png)
 
@@ -63,11 +63,11 @@
 
   * 「標準的なバス情報フォーマット」に基づき、静的・動的データを整備し、Google Mapsに掲載、病院の待合室にサイネージを設置。
   * 北恵那バス馬籠線の外国人乗客の2割以上がGoogle経路検索でバスの存在を認知
-      * http://www.city.nakatsugawa.gifu.jp/page/081195.html
+    * http://www.city.nakatsugawa.gifu.jp/page/081195.html
   * 北恵那バス苗木城線の日本人利用者の17%がGoogle経路検索でバスの存在を認知（中津川市Webサイト、口コミに次いで3番目に多い）
-        * http://www.city.nakatsugawa.gifu.jp/page/082603.html
+    * http://www.city.nakatsugawa.gifu.jp/page/082603.html
   * 病院の待合室に設置されたサイネージについて、画面表示について65%が「わかりやすい」、バスが利用しやすくなるかについて79%が「思う」と回答
-      * http://www.city.nakatsugawa.gifu.jp/page/083350.html
+    * http://www.city.nakatsugawa.gifu.jp/page/083350.html
 
 ### 静的データ整備後の検索数増加
 

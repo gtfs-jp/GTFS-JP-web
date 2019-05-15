@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <%= partial "partials/head" %>
+    <%= stylesheet_link_tag "site" %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <%= partial "partials/header" %>
+
+    <%= yield %>
+
+    <%= partial "partials/footer" %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <%= javascript_include_tag "index" %>
+  </body>
+</html>
