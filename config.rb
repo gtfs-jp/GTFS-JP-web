@@ -17,6 +17,7 @@ set :markdown,
       fenced_code_blocks: true,
       with_toc_data:      true,
       space_after_headers: false,
+      no_intra_emphasis: true,
       renderer:           CustomRenderer
 set :markdown_engine, :redcarpet
 
