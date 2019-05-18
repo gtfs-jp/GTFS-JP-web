@@ -67,7 +67,15 @@ page 'developpers-guide/*.html', layout: 'with_sidemenu'
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  after_build do |builder|
+    #bundle exec middleman build --verbose -e $WERCKER_GIT_BRANCH
+    branch_name = ARGV[3]
+    if branch_name != 'master'
+      puts "ブランチ名:#{branch_name}"
+      Dir.glob("./build/**/*.html").each do |path|
+          builder.thor.gsub_file path, /href="\//, "href=\"/testsite/#{branch_name}/"
+      end
+    end
+  end
+end
