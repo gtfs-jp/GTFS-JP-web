@@ -1,0 +1,47 @@
+box: ruby:2.5.1
+build:
+  steps:
+    - bigtruedata/install-node
+    - bundle-install
+    # middleman build ブランチ名を環境変数として渡す
+    - script:
+      name: middleman build
+      code: bundle exec middleman build --verbose -e $WERCKER_GIT_BRANCH
+# masterのデプロイ
+deploy-production:
+  steps:
+    - add-to-known_hosts:
+      hostname: gtfs.jp
+    - mktemp:
+      envvar: PRIVATEKEY_PATH
+    # werckerで設定したsshの秘密鍵の環境変数を基に秘密鍵を生成
+    - create-file:
+      name: Create private key
+      filename: $PRIVATEKEY_PATH
+      content: $PRIVATE_KEY
+      overwrite: true
+    # scpでデプロイ
+    - script:
+      name: deploy testsite with scp
+      code: scp -i $PRIVATEKEY_PATH -r build/* $USER@gtfs.jp:/home/gtfs/www
+# テストサイトのデプロイ
+deploy-test-site:
+  steps:
+    - add-to-known_hosts:
+      hostname: gtfs.jp
+    - mktemp:
+      envvar: PRIVATEKEY_PATH
+    # werckerで設定したsshの秘密鍵の環境変数を基に秘密鍵を生成
+    - create-file:
+      name: Create private key
+      filename: $PRIVATEKEY_PATH
+      content: $PRIVATE_KEY
+      overwrite: true
+    # sshでアップ先ディレクトリを作成
+    - script:
+      name: ssh and mkdir
+      code: ssh -i $PRIVATEKEY_PATH $USER@gtfs.jp mkdir -p /home/gtfs/www/testsite/$WERCKER_GIT_BRANCH
+    # scpでデプロイ
+    - script:
+      name: deploy testsite with scp
+      code: scp -i $PRIVATEKEY_PATH -r build/* $USER@gtfs.jp:/home/gtfs/www/testsite/$WERCKER_GIT_BRANCH
