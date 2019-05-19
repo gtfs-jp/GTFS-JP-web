@@ -4,7 +4,6 @@
     }
 }
 
-
 header{
   z-index: 99;
   position: fixed;
@@ -23,29 +22,25 @@ header{
 main{
   padding-top: 64px;
   overflow: hidden;
-}
-
-h1{
-  font-size: 30px;
-  margin-top: 1rem;
-}
-
-h2{
-  font-size: 26px;
-  padding-bottom: 10px;
-  border-bottom: solid 1px #a89c9c;
-}
-
-h3{
-  font-size: 22px;
-}
-
-h4{
-  font-size: 18px;
-}
-
-h5{
-  font-size: 16px;
+  min-height: 90vh;
+  h1{
+    font-size: 30px;
+    margin-top: 1rem;
+  }
+  h2{
+    font-size: 26px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #a89c9c;
+  }
+  h3{
+    font-size: 22px;
+  }
+  h4{
+    font-size: 18px;
+  }
+  h5{
+    font-size: 16px;
+  }
 }
 
 body {
@@ -69,10 +64,6 @@ img{
   margin: 0 auto;
   max-width: 80%;
   display: block;
-}
-
-main{
-  min-height: 90vh;
 }
 
 .eye-catch{
@@ -131,16 +122,31 @@ main{
 .container-include-sidemenu{
   width: 100%;
   color: #34495e;
-  .main-content-with-sidemenu{
+  .content-wrapper{
     @media (min-width: 990px) {
-      padding: 20px 18% 0 30%;
+      padding: 20px 16% 0 30%;
     }
-    .section:not(:last-child){
-      margin-bottom: 30px;
+  }
+  .specification-wrapper{
+    @media (min-width: 990px) {
+      padding: 20px 10% 0 25%;
+    }
+  }
+  .main-content-with-sidemenu{
+    h1{
       padding-bottom: 30px;
     }
-    h1{
-      padding-bottom: 50px;
+    h3{
+      color: #2c3e50;
+    }
+    h4:before{
+      content: "# ";
+    }
+    p{
+      font-size: 14px;
+    }
+    li{
+      font-size: 14px;
     }
     ul>li{
       list-style: disc;
@@ -155,33 +161,21 @@ main{
     .section{
       padding-top: 70px; //ここにアンカーリンクで飛んできたときに、上に張り付かないようにする
       margin-top: -70px; //ここにアンカーリンクで飛んできたときに、上に張り付かないようにする
-      p{
-        font-size: 14px;
-      }
-      li{
-        font-size: 14px;
-      }
-      h3{
-        color: #2c3e50;
-        font-weight: bold;
-      }
-      h4:before{
-        content: "# ";
-      }
+    }
+    .section:not(:last-child){
+      margin-bottom: 25px;
+      padding-bottom: 25px;
     }
     .specification{
-      h4{
-        text-align: center;
-      }
       table{
         border: solid 1px #888888;
-        margin-left: 5%;
+        margin-left: 2%;
         th{
           font-size: 14px;
-          padding: 7px;
+          padding: 4px;
         }
         tr{
-          font-size: 12px;
+          font-size: 11px;
         }
         tr:nth-child(even){
           background-color: #e3f2fd3d;
@@ -189,9 +183,16 @@ main{
         tr:hover{
           background-color: #e3f2fd;
         }
+        tr td:nth-of-type(1){
+          white-space: nowrap;
+        }
+        tr td:nth-of-type(2){
+          white-space: nowrap;
+        }
         td{
-          padding: 7px;
-          min-width: 40px;
+          padding: 4px;
+          // min-width: 60px;
+          word-break : break-all;
         }
       }
       >p>img{
