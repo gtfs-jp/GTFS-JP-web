@@ -39,7 +39,7 @@
       contents:
         - title: GTFS-JP 概要
           content: overview
-    - title: GTFS-JP 仕様書
+    - title: 各項目の設定方法
       content: format-reference
       path: /developpers-guide/format-reference.html
       contents:
