@@ -33,12 +33,16 @@
       contents:
         - title: 動的データガイドライン
           content: gtfs-realtime_guidelines
-    - title: 静的データ仕様書
+    - title: GTFS-JP 概要
+      content: overview
+      path: /developpers-guide/overview-gtfs-jp.html
+      contents:
+        - title: GTFS-JP 概要
+          content: overview
+    - title: GTFS-JP 仕様書
       content: format-reference
       path: /developpers-guide/format-reference.html
       contents:
-        - title: 静的バス情報フォーマット（GTFS-JP）の概要
-          content: overview
         - title: 事業者情報<br>事業者追加情報<br>agency.txt<br>agency_jp.txt
           content: agency
         - title: 停留所・標柱情報<br>stops.txt
