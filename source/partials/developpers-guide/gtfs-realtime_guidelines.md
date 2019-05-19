@@ -1,4 +1,4 @@
-<div class="only-print" style="text-align: right;">国土交通省　平成31年3月27日版</div>
+<div class="only-print" style="text-align: right;">「国土交通省　平成31年3月27日版」を元にしたコミュニティ版</div>
 
 # 動的バス情報フォーマット（GTFSリアルタイム）ガイドライン
 
