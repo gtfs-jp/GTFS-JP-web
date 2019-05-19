@@ -69,7 +69,11 @@
           content: feed_info
         - title: 翻訳情報<br>translations.txt
           content: translations
-        - title: 更新履歴
+    - title: GTFS-JP 更新履歴
+      content: change_log
+      path: /developpers-guide/change_log.html
+      contents:
+        - title: GTFS-JP 更新履歴
           content: change_log
 - title: コミュニティ
   content: community
