@@ -4,25 +4,33 @@
     }
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+}
+
 header{
-  z-index: 99;
-  position: fixed;
+  left:0;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:24;
   nav{
     position: fixed;
     a{
       margin-left: 10px;
       margin-right: 5px;
     }
-  img{
-    width: 160px;
-  }
+    img{
+      width: 160px;
+    }
   }
 }
 
 main{
-  padding-top: 64px;
-  overflow: hidden;
-  min-height: 90vh;
+  padding-top: 70px;
   h1{
     font-size: 30px;
     margin-top: 1rem;
@@ -41,13 +49,6 @@ main{
   h5{
     font-size: 16px;
   }
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
 }
 
 footer{
@@ -120,18 +121,12 @@ img{
 }
 
 .container-include-sidemenu{
+  overflow: hidden;
+  min-height: 90vh;
   width: 100%;
+  max-width: 1200px;
+  margin: auto;
   color: #34495e;
-  .content-wrapper{
-    @media (min-width: 990px) {
-      padding: 20px 16% 0 30%;
-    }
-  }
-  .specification-wrapper{
-    @media (min-width: 990px) {
-      padding: 20px 10% 0 25%;
-    }
-  }
   .main-content-with-sidemenu{
     h1{
       padding-bottom: 30px;
@@ -169,7 +164,7 @@ img{
     .specification{
       table{
         border: solid 1px #888888;
-        margin-left: 2%;
+        margin: auto;
         th{
           font-size: 14px;
           padding: 4px;
@@ -204,8 +199,9 @@ img{
   }
   .sidemenu{
     position: fixed;
+    max-width: 275px;
     overflow: scroll;
-    height: 90vh;
+    height: 100vh;
     line-height: 1.2rem;
     border-right: solid 1px #888;
     .selected-chapter{

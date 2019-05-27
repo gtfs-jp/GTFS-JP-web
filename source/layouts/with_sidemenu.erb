@@ -7,9 +7,18 @@
   </head>
   <body>
     <%= partial "partials/header" %>
-
-    <%= yield %>
-
+    <main>
+      <div class="container container-include-sidemenu">
+        <div class="row">
+          <div class="col hide-on-med-and-down l2 sidemenu">
+            <%= partial "partials/sidemenu"%>
+          </div>
+          <div class="col l9 m11 offset-l3 main-content-with-sidemenu content-wrapper">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <%= javascript_include_tag "index" %>
     <%= javascript_include_tag "sidemenu" %>
