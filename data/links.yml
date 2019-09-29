@@ -30,15 +30,9 @@
     - title: 動的データガイドライン
       content: gtfs-realtime_guidelines
       path: gtfs-realtime_guidelines.html
-    - title: GTFS-JP 概要
-      content: overview-gtfs-jp
-      path: overview-gtfs-jp.html
-    - title: 各項目の設定方法
+    - title: GTFS-JP 仕様書
       content: format-reference
       path: format-reference.html
-    - title: GTFS-JP 更新履歴
-      content: change_log
-      path: change_log.html
 - title: コミュニティ
   content: community
   path: /community.html
