@@ -2,6 +2,7 @@
   content: get-started
   path: /get-started.html
   nest_depth: 1
+  page_type: onepage
   contents:
     - title: はじめよう！「標準的なバス情報フォーマット」
       content: introduction
@@ -11,6 +12,7 @@
   content: making-data
   path: /making-data.html
   nest_depth: 1
+  page_type: onepage
   contents:
     - title: データ整備の手引き
       content: how_to_start
@@ -19,62 +21,24 @@
 - title: 技術情報
   content: developpers-guide
   path: /developpers-guide.html
-  nest_depth: 2
+  nest_depth: 1
+  page_type: multipage
   contents:
     - title: 配信方法ガイドライン
       content: distribution_guidelines
-      path: /developpers-guide/distribution_guidelines.html
-      contents:
-        - title: 配信方法ガイドライン
-          content: distribution_guidelines
+      path: distribution_guidelines.html
     - title: 動的データガイドライン
       content: gtfs-realtime_guidelines
-      path: /developpers-guide/gtfs-realtime_guidelines.html
-      contents:
-        - title: 動的データガイドライン
-          content: gtfs-realtime_guidelines
+      path: gtfs-realtime_guidelines.html
     - title: GTFS-JP 概要
-      content: overview
-      path: /developpers-guide/overview-gtfs-jp.html
-      contents:
-        - title: GTFS-JP 概要
-          content: overview
+      content: overview-gtfs-jp
+      path: overview-gtfs-jp.html
     - title: 各項目の設定方法
       content: format-reference
-      path: /developpers-guide/format-reference.html
-      contents:
-        - title: 事業者情報<br>事業者追加情報<br>agency.txt<br>agency_jp.txt
-          content: agency
-        - title: 停留所・標柱情報<br>stops.txt
-          content: stops
-        - title: 経路情報<br>routes.txt<br>経路追加情報<br>routes_jp.txt
-          content: routes
-        - title: 便情報<br>trips.txt
-          content: trips
-        - title: 営業所情報<br>office_jp.txt
-          content: office_jp
-        - title: 通過時刻情報<br>stop_times.txt
-          content: stop_times
-        - title: 運行区分情報<br>calendar.txt<br>運行日情報<br>calendar_dates.txt
-          content: calendar
-        - title: 運賃属性情報<br>fare_attributes.txt<br>運賃定義情報<br>fare_rules.txt
-          content: fare
-        - title: 描画情報<br>shapes.txt
-          content: shapes
-        - title: 運行間隔情報<br>frequencies.txt
-          content: frequencies
-        - title: 乗換情報<br>transfers.txt
-          content: transfers
-        - title: 提供情報<br>feed_info.txt
-          content: feed_info
-        - title: 翻訳情報<br>translations.txt
-          content: translations
+      path: format-reference.html
     - title: GTFS-JP 更新履歴
       content: change_log
-      path: /developpers-guide/change_log.html
-      contents:
-        - title: GTFS-JP 更新履歴
-          content: change_log
+      path: change_log.html
 - title: コミュニティ
   content: community
   path: /community.html
