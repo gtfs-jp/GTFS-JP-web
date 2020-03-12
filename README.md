@@ -28,7 +28,7 @@ $ bundle install --path vendor/bundle
 
 middlemanサーバーの起動
 ```
-$ bundle exec middlman
+$ bundle exec middleman
 ```
 ローカルにWeb サーバを起動され、ブラウザで`http://localhost:4567/`にアクセスすると、`/source`以下について反映された変更を確認することができます。
 [LiveReload](https://middlemanapp.com/jp/basics/development-cycle/#livereload)を導入しています。
@@ -46,6 +46,6 @@ Pull Requestには、例えば対応issueなどレビュワーがレビューす
 
 ###  ホスティング
 ホスティングしている場所はこちらです。
-https://gtfs.jp/
+https://www.gtfs.jp/
 
 現在はビルドした成果物を@kumatiraが手作業でアップロードしていますが、リモートへのpushによってCIが走り自動でビルド→デプロイが行われるようにする予定です。
