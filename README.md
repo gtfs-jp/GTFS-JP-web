@@ -43,9 +43,9 @@ $ bundle exec middleman build
 ホスティングしている場所はこちらです。
 https://www.gtfs.jp/
 
-このリポジトリにpushされるとCIの[wercker](https://app.wercker.com/)が走り、自動でデプロイされます。
-masterブランチの成果物は `gtfs.jp/` 直下に、それ以外のブランチは `https://www.gtfs.jp/testsite/{ブランチ名}/` にデプロイされます。
-後者はプルリクの確認などに用いてください。
+このリポジトリにpushされるとCIの[wercker](https://app.wercker.com/)が走り、自動でデプロイされます。実行内容は wercker.yml を参照ないし編集してください。
+
+masterブランチの成果物は `gtfs.jp/` 直下に、それ以外のブランチは `https://www.gtfs.jp/testsite/{ブランチ名}/` にデプロイされます。後者はプルリクの確認などで用いることができます。
 
 werckerは @kumatira が管理しています。Github Actionsに乗り換えたい...
 
