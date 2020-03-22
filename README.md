@@ -5,12 +5,12 @@ in this repositry is japanese language. But this rule **does not refuse** joinin
 
 # GTFS-JP-Web
 GTFS-JPの開発者ポータルです。このリポジトリは以下の役割を持っています。
-* GTFS-JPを解説するポータルサイトのソース
+* GTFS-JPを解説するポータルサイト https://www.gtfs.jp/ のソース
 
-## ポータルサイトのソースとして
+## gtfs.jpのソースとして
 このリポジトリのファイルは、GTFS-JPを解説するポータルサイトの構築するためのデータです。このサイトはGTFS-JPに基づくデータを作成する方、およびそれを利用する開発者を助けるものです。
 
-サイトは静的サイトフレームワークの[middleman](https://middlemanapp.com/jp/)を使っています。
+静的サイトフレームワークの[middleman](https://middlemanapp.com/jp/)を使っています。
 
 ### ポータルサイトの役割
 このポータルサイトの役割は以下を想定しています。
@@ -28,7 +28,7 @@ $ bundle install --path vendor/bundle
 
 middlemanサーバーの起動
 ```
-$ bundle exec middlman
+$ bundle exec middleman
 ```
 ローカルにWeb サーバを起動され、ブラウザで`http://localhost:4567/`にアクセスすると、`/source`以下について反映された変更を確認することができます。
 [LiveReload](https://middlemanapp.com/jp/basics/development-cycle/#livereload)を導入しています。
@@ -39,13 +39,18 @@ $ bundle exec middleman build
 ```
 上記コマンドを実行すると`/build`ディレクトリに成果物がビルドされます。
 
+###  ホスティング
+ホスティングしている場所はこちらです。
+https://www.gtfs.jp/
+
+このリポジトリにpushされるとCIの[wercker](https://app.wercker.com/)が走り、自動でデプロイされます。実行内容は wercker.yml を参照ないし編集してください。
+
+masterブランチの成果物は `gtfs.jp/` 直下に、それ以外のブランチは `https://www.gtfs.jp/testsite/{ブランチ名}/` にデプロイされます。後者はプルリクの確認などで用いることができます。
+
+werckerは @kumatira が管理しています。Github Actionsに乗り換えたい...
+
+
 ### 開発の流れ
 「標準的なバス情報フォーマット」の仕様変更などが更新のトリガーとして考えられます。また解説や事例の追加、デザイン変更などポータルサイト自体の改修も行うことができます。
 
-Pull Requestには、例えば対応issueなどレビュワーがレビューする上で参考になる材料を極力含めるようにします、
-
-###  ホスティング
-ホスティングしている場所はこちらです。
-https://gtfs.jp/
-
-現在はビルドした成果物を@kumatiraが手作業でアップロードしていますが、リモートへのpushによってCIが走り自動でビルド→デプロイが行われるようにする予定です。
+Pull Requestには、例えば対応issueなどレビュワーがレビューする上で参考になる材料を極力含めるようにします。
