@@ -35,11 +35,6 @@ page '/*.txt', layout: false
 
 # With alternative layout
 page 'index.html', layout: 'index'
-page 'get-started.html', layout: 'with_sidemenu'
-page 'making-data.html', layout: 'with_sidemenu'
-page 'developpers-guide.html', layout: 'with_sidemenu'
-page 'community.html', layout: 'with_sidemenu'
-page 'developpers-guide/*.html', layout: 'with_sidemenu'
 
 
 
