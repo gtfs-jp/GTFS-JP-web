@@ -9,58 +9,13 @@
       </div>
       <div class="col s7">
         <p>「標準的なバス情報フォーマット」は、バス事業者と経路検索等の情報利用者との情報の受渡しのための共通フォーマットです。国土交通省により2016年から標準化が進められています。公共交通データのデファクトスタンダートであるGTFSを元に作られた、交通事業者と開発者の双方に優しいフォーマットです。</p>
-        <div class="buttons-row">
-          <%= link_to(
-            "はじめる",
-            "get-started.html",
-            :class => 'btn-circle-radius btn-mould-blue'
-          ) %>
-          <%= link_to(
-            "技術情報",
-            "developpers-guide.html",
-            :class => 'btn-circle-radius btn-mould-blue'
-          ) %>
-          <a href="https://github.com/gtfs-jp/GTFS-JP-web" class="btn-circle-radius btn-fill-blue" target="_blank">
-            <i class="fab fa-github"></i>
-            <span>GitHub</span>
-          </a>
-        </div>
       </div>
     </div>
   </div>
 
-  <div class="toppage-discriptions">
-    <div class="row">
-      <div class="col s4">
-        <div class="card">
-          <div class="card-panel">
-            <span class="card-title blue-text text-lighten-1">初めての方へ</span>
-            <p>「標準的なバス情報フォーマット」とは何か。どういった効果があるのか。</p>
-            <a href="get-started.html" class="waves-effect waves-light btn blue lighten-2">get started</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s4">
-        <div class="card">
-          <div class="card-panel">
-            <span class="card-title blue-text text-lighten-1">データの整備</span>
-            <p>誰がデータをつくるのか。データはどうやって作り、提供するのか。</p>
-            <a href="making-data.html" class="waves-effect waves-light btn blue lighten-2">data making</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s4">
-        <div class="card">
-          <div class="card-panel">
-            <span class="card-title blue-text text-lighten-1">技術情報</span>
-            <p>フォーマットの仕様。<br>データ配信時のガイドライン。</p>
-            <a href="developpers-guide.html" class="waves-effect waves-light btn blue lighten-2">developper's guide</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="page-info">
+    <p>最新の「標準的なバス情報フォーマット」の仕様書とガイドラインは<a href="https://www.mlit.go.jp/sogoseisaku/transport/sosei_transport_tk_000112.html">国土交通省の公開ページ</a>で確認できます。</p>
   </div>
-  <%= partial "partials/source-info.html.erb" %>
   <div class="center-align toppage-discriptions">
     <h2>GTFS-JPに基づいたオープンデータ</h2>
     <p>GTFS-JPにしたがって作られたオープンデータが日本全国で公開され始めています。同じ形式のデータであるため、GTFS-JPに対応したアプリケーションであればどのデータでも容易に取り込むことができます。</p>
