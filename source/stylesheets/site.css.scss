@@ -78,7 +78,7 @@ main{
 .eye-catch{
   margin: 45px 15px 0 15px;
   h1{
-     text-align: center;
+    text-align: center;
   }
 }
 
@@ -93,29 +93,6 @@ main{
   margin-top: 70px;
 }
 
-.btn-circle-radius{
-  border-radius: 2em;
-}
-
-.btn-mould-blue{
-  padding: 8px 20px;
-  border: solid 1px #64b5f6;
-  letter-spacing: 0.5px;
-}
-
-.btn-fill-blue{
-  padding: 8px 20px;
-  letter-spacing: 0.5px;
-  color: #fefefe;
-  background-color: #64b5f6;
-}
-
-.octcat-icon{
-  height: 90%;
-  margin-bottom: 1%;
-  vertical-align: middle;
-}
-
 .japan-map{
   width: 75%;
   margin-top: 40px;
@@ -126,116 +103,4 @@ main{
   margin: 10px;
   border: solid 2px #64b5f6;
   border-radius: 5px;
-}
-
-.container-include-sidemenu{
-  width: 100%;
-  color: #34495e;
-  .main-content-with-sidemenu{
-    @media (min-width: 990px) {
-      padding: 20px 18% 0 30%;
-    }
-    .section:not(:last-child){
-      margin-bottom: 30px;
-      padding-bottom: 30px;
-    }
-    h1{
-      padding-bottom: 50px;
-    }
-    ul>li{
-      list-style: disc;
-      margin-left: 20px;
-      margin-top: 2px;
-    }
-    li>ul{
-      li{
-        list-style: circle;
-      }
-    }
-    .section{
-      padding-top: 70px; //ここにアンカーリンクで飛んできたときに、上に張り付かないようにする
-      margin-top: -70px; //ここにアンカーリンクで飛んできたときに、上に張り付かないようにする
-      p{
-        font-size: 14px;
-      }
-      li{
-        font-size: 14px;
-      }
-      h3{
-        color: #2c3e50;
-        font-weight: bold;
-      }
-      h4:before{
-        content: "# ";
-      }
-    }
-    .specification{
-      h4{
-        text-align: center;
-      }
-      table{
-        border: solid 1px #888888;
-        margin-left: 5%;
-        th{
-          font-size: 14px;
-          padding: 7px;
-        }
-        tr{
-          font-size: 12px;
-        }
-        tr:nth-child(even){
-          background-color: #e3f2fd3d;
-        }
-        tr:hover{
-          background-color: #e3f2fd;
-        }
-        td{
-          padding: 7px;
-          min-width: 40px;
-        }
-      }
-      >p>img{
-        margin: 0 auto;
-        width: 50%;
-        display: block;
-      }
-    }
-  }
-  .sidemenu{
-    position: fixed;
-    overflow: scroll;
-    height: 90vh;
-    line-height: 1.2rem;
-    border-right: solid 1px #888;
-    .selected-chapter{
-      font-weight: 600;
-    }
-    ul{
-      margin-bottom: 10px;
-      p{
-      color: #676565;
-      font-size: 12px;
-      margin: 2px 0 0 0;
-      }
-      ul{
-        margin-bottom: 2px;
-      }
-    }
-    li:hover>a{
-      padding-left: 1px;
-    }
-    a:hover {
-      border-left: none !important;
-    }
-    .active{
-      border-left: none !important;
-      padding: 0 !important;
-      p{
-        color: #3c3b3b;
-        font-weight: 500;
-        border-left: 2px solid #64b5f6 !important;
-        padding-left: 15px;
-      }
-    }
-  }
 }
